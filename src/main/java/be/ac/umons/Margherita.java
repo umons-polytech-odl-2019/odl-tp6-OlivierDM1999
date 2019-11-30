@@ -2,14 +2,11 @@ package be.ac.umons;
 
 public class Margherita extends Pizza {
 
-    Margherita(String name)
+    Margherita()
     {
-        super(name);
-        Ingredient pâte=new Ingredient();
-        this.addIngredient(pâte);
-        Ingredient saucetomate=new Ingredient();
-        this.addIngredient(saucetomate);
-        Ingredient fromage=new Ingredient();
-        this.addIngredient(fromage);
+        super("Margherita");
+        addIngredient(new Dough());
+        addIngredient(new TomatoSauce());
+        addIngredient(new Cheese());
     }
 }

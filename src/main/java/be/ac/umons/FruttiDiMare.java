@@ -2,18 +2,13 @@ package be.ac.umons;
 
 public class FruttiDiMare extends Pizza {
 
-    FruttiDiMare(String name)
+    FruttiDiMare()
     {
-        super(name);
-        Ingredient pâte=new Ingredient();
-        this.addIngredient(pâte);
-        Ingredient saucetomate=new Ingredient();
-        this.addIngredient(saucetomate);
-        Ingredient fromage=new Ingredient();
-        this.addIngredient(fromage);
-        Ingredient fruitsdemer=new Ingredient();
-        this.addIngredient(fruitsdemer);
-
+        super("FruttiDiMare");
+        addIngredient(new Dough());
+        addIngredient(new TomatoSauce());
+        addIngredient(new Cheese());
+        addIngredient(new Seafood());
     }
 
 }

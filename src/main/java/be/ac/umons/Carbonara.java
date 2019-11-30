@@ -2,15 +2,12 @@ package be.ac.umons;
 
 public class Carbonara extends Pizza
 {
-    Carbonara(String name)
+    Carbonara()
     {
-        super(name);
-        Ingredient pâte=new Ingredient();
-        this.addIngredient(pâte);
-        Ingredient crèmeblanche=new Ingredient();
-        this.addIngredient(crèmeblanche);
-
+        super("Carbonara");
+        addIngredient(new Dough());
+        addIngredient(new WhiteCream());
+        addIngredient(new Cheese());
+        addIngredient(new Ham());
     }
-
-
 }
