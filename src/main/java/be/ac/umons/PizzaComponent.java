@@ -9,4 +9,5 @@ public interface PizzaComponent {
     public abstract void setName(String n);
     public abstract void setPrice(BigDecimal p);
     public abstract String toString();
+    //
 }
